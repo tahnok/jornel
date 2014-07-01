@@ -1,0 +1,17 @@
+<h1>Journal Entries</h1>
+
+<p><%= link_to 'New', new_entry_path %></p>
+
+<% if @entries.any? %>
+<ul>
+  <% @entries.each do |entry| %>
+    <li>
+      <h2><%= link_to entry.title, entry %></h2>
+      <p><%= entry.body %></p>
+    </li>
+  <% end %>
+</ul>
+<% else %>
+  <p>No entries</p>
+<% end %>
+

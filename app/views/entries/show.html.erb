@@ -1,0 +1,5 @@
+<p><%= @entry.title.present? ? @entry.title : @entry.created_at.strftime('%F') %></p>
+
+<div>
+  <%= @entry.body %>
+</div>
