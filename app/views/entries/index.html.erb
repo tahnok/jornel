@@ -1,17 +1,21 @@
-<h1>Journal Entries</h1>
-
-<p><%= link_to 'New', new_entry_path %></p>
+<div class="top-container entries-container">
+  <h1>Entries</h1>
+</div>
 
 <% if @entries.any? %>
 <ul>
   <% @entries.each do |entry| %>
-    <li>
-      <h2><%= link_to entry.title, entry %></h2>
-      <p><%= entry.body %></p>
+    <li class="card link" data-url="<%= entry_path entry %>">
+      <h2 class="journal-title"><%= entry.title %></h2>
+      <p class="journal-body"><%= entry.body %></p>
     </li>
   <% end %>
 </ul>
 <% else %>
   <p>No entries</p>
 <% end %>
+
+<div class="new link" data-url="<%= new_entry_path %>">
+  +
+</div>
 

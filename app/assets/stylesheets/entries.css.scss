@@ -1,3 +1,39 @@
 // Place all the styles related to the entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.card {
+  list-style: none;
+  padding: 10px 16px;
+  margin: 10px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.card:hover {
+  background: #fafafa;
+}
+
+.journal-title {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.journal-body {
+  font-weight: 100;
+}
+
+.new {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #ff4081;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1.9;
+  font-size: 25px;
+  color: white;
+}
