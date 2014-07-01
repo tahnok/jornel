@@ -6,16 +6,11 @@
 <ul>
   <% @entries.each do |entry| %>
     <li class="card link" data-url="<%= entry_path entry %>">
-      <h2 class="journal-title"><%= entry.title %></h2>
-      <p class="journal-body"><%= entry.body %></p>
+      <h2 class="entry-title"><%= entry.title %></h2>
+      <p class="entry-body"><%= entry.body %></p>
     </li>
   <% end %>
 </ul>
 <% else %>
   <p>No entries</p>
 <% end %>
-
-<div class="new link" data-url="<%= new_entry_path %>">
-  +
-</div>
-

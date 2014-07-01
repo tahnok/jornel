@@ -1,5 +1,9 @@
-<p><%= @entry.title.present? ? @entry.title : @entry.created_at.strftime('%F') %></p>
+<div class="top-container entries-container">
+  <h1><%= @entry.title.present? ? @entry.title : @entry.created_at.strftime('%F') %></h1>
+</div>
+<div class="entry">
 
-<div>
+<div class="entry-body">
   <%= @entry.body %>
+</div>
 </div>
